@@ -1,0 +1,37 @@
+Package: RBSA
+Title: Reconciling Overt Bias and Hidden Bias in Sensitivity Analysis
+Version: 0.9
+Authors@R: c(
+    person("Siyu", "Heng", email = "siyuheng@nyu.edu", role = c("aut")),
+    person("Yanxin", "Shen", email = "shenyanxin5@163.com", role = c("aut", "cre")),
+    person("Pengyun", "Wang", email = "pengyun.wang@oii.ox.ac.uk", role = c("aut"))
+    )
+Description: 
+    RBSA provides tools for robust sensitivity analysis and hypothesis testing in observational studies. 
+    It incorporates advanced statistical methods, such as gamma sensitivity tests and quadratic programming, 
+    to rigorously evaluate the impact of treatment effects while accounting for unobserved confounding. 
+    The package supports flexible machine learning models for propensity score estimation, 
+    including Random Forest, XGBoost, Logistic Regression, and SVM, enabling comprehensive 
+    and customizable analyses for matched study designs.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 4.0.0)
+Imports: 
+    gurobi,
+    xgboost,
+    randomForest,
+    e1071,
+    Matrix,
+    dplyr,
+    matrixStats
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+URL: https://github.com/YanxinShen/RBSA
+BugReports: https://github.com/YanxinShen/RBSA/issues
