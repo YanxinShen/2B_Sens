@@ -88,7 +88,7 @@ m.svm <- function(Y, x, x.2, ...) {
   params <- modifyList(default_params, user_params)
   x$Z <- Y
   svm_model <- do.call(svm, c(list(formula = Z ~ ., data = x), params))
-  y.hat <- RBSA:::predict(svm_model, newdata = x.2)
+  y.hat <- predict(svm_model, newdata = x.2)
 
   return(as.vector(y.hat))
 }
@@ -105,7 +105,7 @@ m.rf <- function(Y, x, x.2, ...) {
 
   x$Z <- as.factor(Y)
   rf_model <- randomForest(Z ~ ., data = x, ntree = 100)
-  y.hat <- RBSA:::predict(rf_model, newdata = x.2, type = "prob")
+  y.hat <- predict(rf_model, newdata = x.2, type = "prob")
 
   return(as.vector(y.hat[, 2]))
 }
@@ -126,7 +126,7 @@ m.logistic <- function(Y, x, x.2, ...) {
   params <- modifyList(default_params, user_params)
   x$Z <- Y
   model <- do.call(glm, c(list(formula = Z ~ ., data = x), params))
-  y.hat <- RBSA:::predict(model, newdata = x.2, type = "response")
+  y.hat <- predict(model, newdata = x.2, type = "response")
 
   return(as.vector(y.hat))
 }
@@ -249,7 +249,7 @@ constr = function(index, gamma=4){
 get_predict = function(Y, x, x.2, model='rf', ...){
   func_name = paste0("m.", model)
   func <- tryCatch({
-    match.fun(RBSA:::func_name)
+    match.fun(func_name)
   }, error = function(e) {
     stop(paste("Unsupported Model:", model, "- ensure that the function", func_name, "exists."))
   })
