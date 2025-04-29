@@ -1,6 +1,6 @@
 Package: RBSA
 Title: Reconciling Overt Bias and Hidden Bias in Sensitivity Analysis
-Version: 0.9
+Version: 0.9.1
 Authors@R: c(
     person("Siyu", "Heng", email = "siyuheng@nyu.edu", role = c("aut")),
     person("Yanxin", "Shen", email = "shenyanxin5@163.com", role = c("aut", "cre")),

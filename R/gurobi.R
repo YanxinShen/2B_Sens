@@ -109,5 +109,5 @@ cal_gurobi = function(Q, w, A, vec, N, ns, ns1, ns2, upper, lower, tstar, params
     H0 = NA
   }
   cat("Objective = ", calculation, "\n")
-  return(list(H0, calculation))
+  return(list(H0, calculation, result$x))
 }
