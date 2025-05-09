@@ -1,15 +1,15 @@
-# RBSA: Reconciling Overt Bias and Hidden Bias in Sensitivity Analysis
+# 2B_Sens: Reconciling Overt Bias and Hidden Bias in Sensitivity Analysis for Matched Observational Studies
 
-`RBSA` is an R package designed for robust sensitivity analysis and hypothesis testing in observational studies. It incorporates advanced statistical methods, including gamma sensitivity tests and quadratic programming, to evaluate treatment effects under potential biases.
+`2B_Sens` is an R package designed for conducting a Rosenbaum-type sensitivity analysis informed by post-matching overt bias information.
 
 ---
 
 ## Features
 
-- **Sensitivity Analysis**: Perform gamma tests to assess the robustness of results to unobserved confounding.
-- **Hypothesis Testing**: Evaluate treatment effects using quadratic programming and machine learning-assisted propensity score modeling.
+- **Sensitivity Analysis**: Calculate the worst-case p-values under the Rosenbaum bounds constraint. 
+- **Hypothesis Testing**: Conduct hypothesis testing under the Rosenbaum bounds constraint.
 - **Flexible Model Options**: Support for various models including Random Forest, XGBoost, Logistic Regression, and SVM.
-- **Customizable Analysis**: Fine-tune parameters such as significance levels, gamma sensitivity, and machine learning model configurations.
+- **Customizable Analysis**: Parameters such as significance levels, sensitivity parameter Gamma, and machine learning model configurations.
 - **Automated Workflow**: Combines preprocessing, sensitivity analysis, and hypothesis testing in a seamless pipeline.
 
 ---
