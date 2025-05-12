@@ -1,4 +1,4 @@
-#' Perform Overall Hypothesis Testing
+#' Perform Hypothesis Testing
 #'
 #' This function conducts hypothesis testing for sensitivity analysis in observational studies.
 #' It evaluates the null hypothesis (\code{H0}) for both treated and control groups by solving

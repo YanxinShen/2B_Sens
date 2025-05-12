@@ -1,6 +1,6 @@
-#' Perform Sensitivity Analysis and Compute P-Values
+#' Compute P-Values
 #'
-#' This function performs sensitivity analysis and computes p-values for two datasets, using
+#' This function contains details of computing p-values for two datasets, using
 #' quadratic programming optimization and hypothesis testing. The results include objectives,
 #' p-values, and hypothesis test results for each dataset.
 #'

@@ -1,7 +1,7 @@
 #' Calculate P-Value with Gamma Test and Sensitivity Analysis
 #'
 #' This function calculates the p-value for a given treated and control dataset
-#' using a combination of a gamma test and sensitivity analysis. It processes the data,
+#' using a combination of checking feasible set and sensitivity analysis. It processes the data,
 #' applies optimization techniques, and determines whether to reject the null hypothesis.
 #'
 #' @param treated_lst A list containing data for the treated group.

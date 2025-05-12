@@ -1,8 +1,7 @@
 #' Gamma Sensitivity Analysis Test
 #'
-#' This function performs a gamma sensitivity analysis test to evaluate the robustness of causal inferences
-#' under potential unmeasured confounding in observational studies. The function computes test statistics
-#' and evaluates constraints using quadratic programming (e.g., Gurobi).
+#' This function performs a gamma sensitivity analysis test to check whether the feasible set is empty.
+#' The function computes test statistics and evaluates constraints using quadratic programming (e.g., Gurobi).
 #'
 #' @param d1 Data frame for the first group. It must contain the following variables:
 #' \itemize{
