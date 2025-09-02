@@ -88,7 +88,7 @@ A data frame with the following columns:
 }
 \description{
 This function calculates the p-value for a given treated and control dataset
-using a combination of a gamma test and sensitivity analysis. It processes the data,
+using a combination of checking feasible set and sensitivity analysis. It processes the data,
 applies optimization techniques, and determines whether to reject the null hypothesis.
 }
 \details{

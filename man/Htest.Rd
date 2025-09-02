@@ -2,7 +2,7 @@
 % Please edit documentation in R/testH.R
 \name{Htest}
 \alias{Htest}
-\title{Perform Overall Hypothesis Testing}
+\title{Perform Hypothesis Testing}
 \usage{
 Htest(
   d1,

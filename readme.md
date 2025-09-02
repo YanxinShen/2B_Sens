@@ -49,4 +49,4 @@ To install the package, use:
 
 ```R
 # Install directly from the tar.gz file
-devtools::install_github("YanxinShen/RBSA")
+devtools::install_github("YanxinShen/2B_Sens")

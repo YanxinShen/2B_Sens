@@ -46,9 +46,8 @@ A list containing:
 }
 }
 \description{
-This function performs a gamma sensitivity analysis test to evaluate the robustness of causal inferences
-under potential unmeasured confounding in observational studies. The function computes test statistics
-and evaluates constraints using quadratic programming (e.g., Gurobi).
+This function performs a gamma sensitivity analysis test to check whether the feasible set is empty.
+The function computes test statistics and evaluates constraints using quadratic programming (e.g., Gurobi).
 }
 \details{
 The data frames \code{d1} and \code{d2} are assumed to follow a specific structure for the \code{index} column:

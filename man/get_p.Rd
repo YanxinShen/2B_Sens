@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_p.R
 \name{get_p}
 \alias{get_p}
-\title{Perform Sensitivity Analysis and Compute P-Values}
+\title{Compute P-Values}
 \usage{
 get_p(
   d1,
@@ -71,7 +71,7 @@ A list containing:
 }
 }
 \description{
-This function performs sensitivity analysis and computes p-values for two datasets, using
+This function contains details of computing p-values for two datasets, using
 quadratic programming optimization and hypothesis testing. The results include objectives,
 p-values, and hypothesis test results for each dataset.
 }
